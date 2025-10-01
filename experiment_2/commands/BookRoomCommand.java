@@ -1,16 +1,12 @@
 package com.smartoffice.facility.commands;
-
 import com.smartoffice.facility.core.Booking;
 import com.smartoffice.facility.core.Room;
 import com.smartoffice.facility.core.User;
 import com.smartoffice.facility.interfaces.IAuthenticationService;
 import com.smartoffice.facility.services.OfficeFacility;
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeParseException;
 import java.util.Scanner;
-
-
 public class BookRoomCommand extends AuthenticatedCommand {
 
     private final Scanner scanner;
