@@ -1,3 +1,7 @@
+# FEATURES USED
+
+## Smart Office Facility Menu
+
 <img width="700" height="300" alt="Screenshot 2025-09-30 225603" src="https://github.com/user-attachments/assets/e4ea7b22-f0f6-4741-9e51-e45d6766c341" />
 
 <img width="700" height="300" alt="Screenshot 2025-09-30 225652" src="https://github.com/user-attachments/assets/d37b0315-e956-4f7a-8449-1e8f0bf63a39" />
@@ -61,6 +65,8 @@
 
 
 
+
+<img width="661" height="595" alt="Screenshot 2025-10-01 081319" src="https://github.com/user-attachments/assets/7b7d1f1b-f039-417c-b8b1-0b7c470e9bcd" />
 
 
 
