@@ -11,6 +11,7 @@
 * Sensor Mock
 * Emergency Test(Sensor)
 * Toggle Emergency Mode
+* Notification 
 
 # 2.Manager functions
 
@@ -136,6 +137,7 @@
 # HIGH LEVEL SYSTEM DESIGN
 
 <img width="661" height="595" alt="Screenshot 2025-10-01 081319" src="https://github.com/user-attachments/assets/7b7d1f1b-f039-417c-b8b1-0b7c470e9bcd" />
+
 
 
 
