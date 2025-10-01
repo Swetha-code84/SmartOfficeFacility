@@ -1,29 +1,20 @@
-// File: src/main/java/com/smartoffice/facility/core/User.java
+
 package com.smartoffice.facility.core;
 
-/**
- * Represents a user of the Smart Office Facility system, containing identity,
- * authorization, and credentials, including a unique Manager ID for elevated security.
- */
 public class User {
     private final String username;
     private final String userId;
     private final String password;
     private final boolean isAdmin;
-    private final String managerId; // NEW: Field to store the manager's unique ID for secondary check
+    private final String managerId; 
 
-    /**
-     * Primary constructor used by the UserBuilder to finalize the object.
-     */
     public User(String username, String userId, String password, boolean isAdmin, String managerId) {
         this.username = username;
         this.userId = userId;
         this.password = password;
         this.isAdmin = isAdmin;
-        this.managerId = managerId; // Initialized here
+        this.managerId = managerId; 
     }
-
-    // --- Getters for Authentication and Display ---
 
     public String getUsername() {
         return username;
@@ -41,9 +32,6 @@ public class User {
         return isAdmin;
     }
 
-    /**
-     * NEW GETTER: Retrieves the unique manager ID for the secondary security check.
-     */
     public String getManagerId() {
         return managerId;
     }
