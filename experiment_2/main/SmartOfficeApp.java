@@ -20,19 +20,12 @@ import com.smartoffice.facility.services.OfficeFacility;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/**
- * The Main Application class for the Smart Office Facility.
- * This class handles the user interface, command invocation, and manages the
- * lifecycle of the Singleton OfficeFacility and the AutomationScheduler.
- */
 public class SmartOfficeApp {
-
-    // Singleton Instances
+    
     private final OfficeFacility officeFacility = OfficeFacility.getInstance();
     private final IAuthenticationService authService = new MockAuthenticationService();
     private final AutomationScheduler scheduler = AutomationScheduler.getInstance();
 
-    // Application State
     private User currentUser = null;
     private final Scanner scanner = new Scanner(System.in);
 
@@ -41,23 +34,17 @@ public class SmartOfficeApp {
         app.start();
     }
 
-    /**
-     * Initializes the scheduler and starts the main application loop.
-     */
     public void start() {
-        System.out.println("🚀 Starting Smart Office Facility Manager...");
-        scheduler.startScheduler(); // Start the background task for auto-releasing rooms
+        System.out.println(" Starting Smart Office Facility Manager...");
+        scheduler.startScheduler(); 
 
         mainLoop();
 
-        System.out.println("👋 Shutting down scheduler and exiting application. Goodbye!");
+        System.out.println(" Shutting down scheduler and exiting application. Goodbye!");
         scheduler.stopScheduler();
         scanner.close();
     }
 
-    /**
-     * The main interactive loop for the console application.
-     */
     private void mainLoop() {
         boolean running = true;
         while (running) {
@@ -68,51 +55,49 @@ public class SmartOfficeApp {
                 int choice = Integer.parseInt(scanner.nextLine().trim());
 
                 switch (choice) {
-                    case 1: // 1. Configure Office (Admin Menu Router)
+                    case 1: 
                         command = new AdminMenuCommand(officeFacility, authService, scanner, currentUser);
                         break;
-                    case 2: // 2. Register New User
+                    case 2: 
                         command = new RegisterUserCommand(authService, scanner);
                         break;
-                    case 3: // 3. Login
+                    case 3: 
                         command = new LoginCommand(authService, scanner, this);
                         break;
-                    case 4: // 4. Book Room
+                    case 4: 
                         command = new BookRoomCommand(officeFacility, authService, scanner, currentUser);
                         break;
-                    case 5: // 5. Cancel Booking
+                    case 5: 
                         command = new CancelBookingCommand(officeFacility, authService, scanner, currentUser);
                         break;
-                    case 6: // 6. Update Room Occupancy (Sensor Mock)
+                    case 6: 
                         command = new UpdateOccupancyCommand(officeFacility, authService, scanner, currentUser);
                         break;
-                    case 7: // 7. View Manager Statistics (Manager Only)
+                    case 7: 
                         command = new ManagerViewStatusCommand(officeFacility, authService, scanner, currentUser);
                         break;
-                    case 8: // 8. View Facility Status (General Status)
+                    case 8: 
                         command = new StatusCommand(officeFacility);
                         break;
-                    case 9: // 9. TOGGLE EMERGENCY MODE (NEW)
-                        // Route to EmergencyCommand, passing the EmergencyService dependency
+                    case 9: 
                         command = new EmergencyCommand(officeFacility, officeFacility.getEmergencyService());
                         break;
-                    case 10: // 10. Exit
+                    case 10: 
                         running = false;
                         break;
                     default:
-                        System.out.println("❌ Invalid choice. Please select a number from the menu.");
+                        System.out.println(" Invalid choice. Please select a number from the menu.");
                 }
 
                 if (command != null) {
-                    // DECORATOR INTEGRATION: Wrap the concrete command with the decorator
                     ICommand loggedCommand = new CommandLoggerDecorator(command);
                     loggedCommand.execute();
                 }
 
             } catch (NumberFormatException e) {
-                System.out.println("❌ Invalid input. Please enter a number.");
+                System.out.println(" Invalid input. Please enter a number.");
             } catch (Exception e) {
-                System.out.println("🚨 An unexpected error occurred: " + e.getMessage());
+                System.out.println(" An unexpected error occurred: " + e.getMessage());
             }
         }
     }
