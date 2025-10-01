@@ -60,7 +60,9 @@
 
 ## Booking Release Warning
 
-<img width="700" height="242" alt="Screenshot 2025-09-30 231126" src="https://github.com/user-attachments/assets/7288a83a-48b4-432c-b658-82be651a6c11" />
+<img width="1824" height="150" alt="Screenshot 2025-09-30 232143" src="https://github.com/user-attachments/assets/e1ae235a-4422-4ccc-b4ac-7f7226887e97" />
+
+<img width="700" height="250" alt="Screenshot 2025-09-30 232157" src="https://github.com/user-attachments/assets/4a0ac79e-0d87-4333-bf4b-cf3c5977b58c" />
 
 ## Mention Capacity & Time Slot
 
@@ -94,21 +96,22 @@
 
 <img width="700" height="329" alt="Screenshot 2025-09-30 230827" src="https://github.com/user-attachments/assets/61b5ddae-2a55-40e3-9dfa-093cf720e3e9" />
 
-<img width="700" height="436" alt="Screenshot 2025-09-30 231005" src="https://github.com/user-attachments/assets/a651c7cb-7ba0-4e4c-9c64-27d37c15c41d" /> 
-
-<img width="700" height="363" alt="Screenshot 2025-09-30 231207" src="https://github.com/user-attachments/assets/7107f262-27b3-47da-a63d-7628f3458ee1" />
-
 ## Emergency Test
 
-<img width="1824" height="150" alt="Screenshot 2025-09-30 232143" src="https://github.com/user-attachments/assets/e1ae235a-4422-4ccc-b4ac-7f7226887e97" />
+<img width="700" height="436" alt="Screenshot 2025-09-30 231005" src="https://github.com/user-attachments/assets/a651c7cb-7ba0-4e4c-9c64-27d37c15c41d" /> 
 
 ## Toggle Emergency Mode
 
-<img width="700" height="250" alt="Screenshot 2025-09-30 232157" src="https://github.com/user-attachments/assets/4a0ac79e-0d87-4333-bf4b-cf3c5977b58c" />
+<img width="700" height="363" alt="Screenshot 2025-09-30 231207" src="https://github.com/user-attachments/assets/7107f262-27b3-47da-a63d-7628f3458ee1" />
 
 ## Exit 
 
+<img width="700" height="242" alt="Screenshot 2025-09-30 231126" src="https://github.com/user-attachments/assets/7288a83a-48b4-432c-b658-82be651a6c11" />
+
+# HIGH LEVEL SYSTEM DESIGN
+
 <img width="661" height="595" alt="Screenshot 2025-10-01 081319" src="https://github.com/user-attachments/assets/7b7d1f1b-f039-417c-b8b1-0b7c470e9bcd" />
+
 
 
 
