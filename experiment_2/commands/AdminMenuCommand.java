@@ -18,65 +18,63 @@ public class AdminMenuCommand extends AuthenticatedCommand {
     @Override
     protected boolean authenticatedExecute() {
         if (!authService.isAdmin(currentUser)) {
-            System.out.println("❌ Access denied. Only administrators can access configuration menu.");
+            System.out.println("Access denied. Only administrators can access configuration menu.");
             return false;
         }
 
-        // --- NEW LOGIC: Initial Batch Configuration ---
+        
         if (!officeFacility.isConfigured()) {
-            System.out.println("\n--- 🚨 INITIAL OFFICE SETUP REQUIRED 🚨 ---");
+            System.out.println("\n---  INITIAL OFFICE SETUP REQUIRED ---");
             System.out.print("Enter the initial number of meeting rooms to create: ");
             if (initialConfigure()) {
-                System.out.println("✅ Initial configuration complete. Accessing Maintenance Menu.");
+                System.out.println("Initial configuration complete. Accessing Maintenance Menu.");
             } else {
-                return false; // Exit if initial setup fails
+                return false; 
             }
         }
 
-        // --- ONGOING MAINTENANCE MENU ---
+        
         while (true) {
             displayAdminMenu();
             String choice = scanner.nextLine().trim();
 
             switch (choice) {
-                case "1": // Add New Room
+                case "1": 
                     addSingleRoom();
                     break;
-                case "2": // List All Rooms
+                case "2": 
                     listRooms();
                     break;
-                case "3": // Set Room Max Capacity
+                case "3": 
                     setRoomCapacity();
                     break;
-                case "4": // Add Occupants (Placeholder/Hint)
-                    System.out.println("Use main menu option 6 to update occupants (sensor mock).");
+                case "4": 
+                    System.out.println(" Use main menu option 6 to update occupants (sensor mock).");
                     break;
-                case "0": // Return to Main Menu
+                case "0": 
                     return true;
                 default:
-                    System.out.println("❌ Invalid choice.");
+                    System.out.println(" Invalid choice.");
             }
         }
     }
 
-    /**
-     * Handles the initial room count input and delegates to OfficeFacility.initialConfigure.
-     */
+
     private boolean initialConfigure() {
         try {
             int numberOfRooms = Integer.parseInt(scanner.nextLine().trim());
 
-            // FIX: Correctly call the renamed method for batch setup
+            
             return officeFacility.initialConfigure(numberOfRooms);
 
         } catch (NumberFormatException e) {
-            System.out.println("❌ Invalid number input. Initial configuration aborted.");
+            System.out.println(" Invalid number input. Initial configuration aborted.");
             return false;
         }
     }
 
     private void displayAdminMenu() {
-        System.out.println("\n--- ⚙️ Admin Maintenance Menu ---");
+        System.out.println("\n---  Admin Maintenance Menu ---");
         System.out.println("1. Add New Room");
         System.out.println("2. List All Rooms");
         System.out.println("3. Set Room Max Capacity");
@@ -85,22 +83,18 @@ public class AdminMenuCommand extends AuthenticatedCommand {
         System.out.print("Enter choice: ");
     }
 
-    /**
-     * New Feature 2: Add Room (Individual Room Addition)
-     */
+  
     private void addSingleRoom() {
         System.out.print("Enter NEW Room Number (must be unique): ");
         try {
             int newRoomNumber = Integer.parseInt(scanner.nextLine().trim());
             officeFacility.addSingleRoom(newRoomNumber);
         } catch (NumberFormatException e) {
-            System.out.println("❌ Invalid room number.");
+            System.out.println(" Invalid room number.");
         }
     }
 
-    /**
-     * New Feature 3: List Rooms
-     */
+  
     private void listRooms() {
         System.out.println("\n--- Room Inventory (ID | Capacity | Status) ---");
         officeFacility.getAllRooms().forEach(room -> {
@@ -110,9 +104,7 @@ public class AdminMenuCommand extends AuthenticatedCommand {
         System.out.println("----------------------------------------------");
     }
 
-    /**
-     * New Feature 1: Set Room MaxCapacity
-     */
+   
     private void setRoomCapacity() {
         System.out.print("Enter Room Number to modify capacity: ");
         try {
@@ -120,7 +112,7 @@ public class AdminMenuCommand extends AuthenticatedCommand {
             Room room = officeFacility.getRoom(roomNumber);
 
             if (room == null) {
-                System.out.println("❌ Room " + roomNumber + " not found.");
+                System.out.println(" Room " + roomNumber + " not found.");
                 return;
             }
 
@@ -128,14 +120,14 @@ public class AdminMenuCommand extends AuthenticatedCommand {
             int newCapacity = Integer.parseInt(scanner.nextLine().trim());
 
             if (newCapacity <= 0) {
-                System.out.println("❌ Capacity must be positive.");
+                System.out.println(" Capacity must be positive.");
                 return;
             }
 
             room.setMaxCapacity(newCapacity);
-            System.out.println("✅ Room " + roomNumber + " capacity set to " + newCapacity + ".");
+            System.out.println(" Room " + roomNumber + " capacity set to " + newCapacity + ".");
         } catch (NumberFormatException e) {
-            System.out.println("❌ Invalid number input.");
+            System.out.println(" Invalid number input.");
         }
     }
 }
