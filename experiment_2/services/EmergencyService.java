@@ -1,11 +1,8 @@
-// File: src/main/java/com/smartoffice.facility.services/EmergencyService.java
+
 package com.smartoffice.facility.services;
 
 import com.smartoffice.facility.main.AppConstants;
 
-/**
- * Singleton Service to manage global system emergency state (e.g., Fire, Alarm).
- */
 public class EmergencyService {
     private static EmergencyService instance;
     private boolean isEmergencyActive = false;
@@ -23,9 +20,6 @@ public class EmergencyService {
         return isEmergencyActive;
     }
 
-    /**
-     * Activates the emergency state, overriding normal system operations.
-     */
     public synchronized void activateEmergency() {
         if (!isEmergencyActive) {
             isEmergencyActive = true;
@@ -33,9 +27,6 @@ public class EmergencyService {
         }
     }
 
-    /**
-     * Deactivates the emergency state, restoring normal operations.
-     */
     public synchronized void deactivateEmergency() {
         if (isEmergencyActive) {
             isEmergencyActive = false;
