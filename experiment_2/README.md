@@ -4,21 +4,38 @@
 
 <img width="700" height="300" alt="Screenshot 2025-09-30 225603" src="https://github.com/user-attachments/assets/e4ea7b22-f0f6-4741-9e51-e45d6766c341" />
 
+## Admin Login
+
 <img width="700" height="300" alt="Screenshot 2025-09-30 225652" src="https://github.com/user-attachments/assets/d37b0315-e956-4f7a-8449-1e8f0bf63a39" />
+
+## Admin Configuration
 
 <img width="700" height="350" alt="Screenshot 2025-09-30 225753" src="https://github.com/user-attachments/assets/0fcea416-1f50-4655-98ff-2cf2fb2d2b37" />
 
+## Admin Maintenance Menu
+
 <img width="700" height="131" alt="Screenshot 2025-09-30 225801" src="https://github.com/user-attachments/assets/9dbd5e7b-32da-4d19-ba38-3e16784438bb" />
+
+## List Rooms
 
 <img width="700" height="227" alt="Screenshot 2025-09-30 225823" src="https://github.com/user-attachments/assets/81067f01-4061-4562-b516-059a6f3de378" />
 
+## Add Rooms
+
 <img width="700" height="300" alt="Screenshot 2025-09-30 225844" src="https://github.com/user-attachments/assets/efdca8b4-4874-47d9-bb18-86d79500cb1c" />
+
+## Available Room Updation 
 
 <img width="700" height="244" alt="Screenshot 2025-09-30 225903" src="https://github.com/user-attachments/assets/9264c85b-5ec5-4030-b7ac-a97595df588b" />
 
+## Set Room Capacity
+
 <img width="700" height="221" alt="Screenshot 2025-09-30 225927" src="https://github.com/user-attachments/assets/5ce9d567-e52d-4746-a2ef-1f807b29121f" />
 
+## Capacity Updation
+
 <img width="700" height="241" alt="Screenshot 2025-09-30 225938" src="https://github.com/user-attachments/assets/b1b8916c-2843-492c-9d2b-b8dbe67e9516" />
+
 
 <img width="700" height="162" alt="Screenshot 2025-09-30 225958" src="https://github.com/user-attachments/assets/f8465487-b270-41de-ab51-50d7f05da8d5" />
 
@@ -67,6 +84,7 @@
 
 
 <img width="661" height="595" alt="Screenshot 2025-10-01 081319" src="https://github.com/user-attachments/assets/7b7d1f1b-f039-417c-b8b1-0b7c470e9bcd" />
+
 
 
 
