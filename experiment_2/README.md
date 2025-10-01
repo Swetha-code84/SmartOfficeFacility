@@ -36,28 +36,49 @@
 
 <img width="700" height="241" alt="Screenshot 2025-09-30 225938" src="https://github.com/user-attachments/assets/b1b8916c-2843-492c-9d2b-b8dbe67e9516" />
 
-
-<img width="700" height="162" alt="Screenshot 2025-09-30 225958" src="https://github.com/user-attachments/assets/f8465487-b270-41de-ab51-50d7f05da8d5" />
+## Return to Main Menu
 
 <img width="700" height="400" alt="Screenshot 2025-09-30 230013" src="https://github.com/user-attachments/assets/1692f8a4-765a-49ac-b7e5-89d03c11534d" />
 
+## User Registration
+
 <img width="700" height="400" alt="Screenshot 2025-09-30 230101" src="https://github.com/user-attachments/assets/eddfe44f-463e-4dda-aa31-24df80f15e11" />
+
+## User Login
 
 <img width="700" height="400" alt="Screenshot 2025-09-30 230127" src="https://github.com/user-attachments/assets/92316c5c-4a1e-4f7b-a5ed-270919b07360" />
 
+## View Available Rooms
+
 <img width="700" height="256" alt="Screenshot 2025-09-30 230149" src="https://github.com/user-attachments/assets/8d6a49c2-96c3-4348-a881-d6420f925a71" />
+
+## Book Room
 
 <img width="700" height="350" alt="Screenshot 2025-09-30 230211" src="https://github.com/user-attachments/assets/259d52ad-aecb-4334-8d78-5f717cacdafd" />
 
 <img width="700" height="194" alt="Screenshot 2025-09-30 230241" src="https://github.com/user-attachments/assets/353f04d3-7754-4b21-999c-e527434b2274" />
 
+## Booking Release Warning
+
+<img width="700" height="242" alt="Screenshot 2025-09-30 231126" src="https://github.com/user-attachments/assets/7288a83a-48b4-432c-b658-82be651a6c11" />
+
+## Mention Capacity & Time Slot
+
 <img width="700" height="259" alt="Screenshot 2025-09-30 230319" src="https://github.com/user-attachments/assets/2cd385ef-c2a4-46ea-abd6-0c5860dab5f4" />
+
+## Reservation Update
 
 <img width="700" height="274" alt="Screenshot 2025-09-30 230335" src="https://github.com/user-attachments/assets/81f6882d-30bb-46a5-a8e6-bf4b9edad8ce" />
 
+## Manager Login
+
 <img width="700" height="460" alt="Screenshot 2025-09-30 230405" src="https://github.com/user-attachments/assets/eda00ca6-896b-4175-811b-b422d212b2aa" />
 
+## Manager Verification
+
 <img width="700" height="367" alt="Screenshot 2025-09-30 230451" src="https://github.com/user-attachments/assets/7fb08f42-2a31-4078-ac34-db745b7bfb5e" />
+
+## Cancel Room
 
 <img width="700" height="392" alt="Screenshot 2025-09-30 230514" src="https://github.com/user-attachments/assets/525c9982-1607-4444-a06b-ca6352bb7d02" />
 
@@ -67,23 +88,28 @@
 
 <img width="700" height="332" alt="Screenshot 2025-09-30 230746" src="https://github.com/user-attachments/assets/c323ac3e-1ae2-42a2-a073-5cdccdb50663" />
 
+## Manager View Status
+
 <img width="700" height="329" alt="Screenshot 2025-09-30 230827" src="https://github.com/user-attachments/assets/61b5ddae-2a55-40e3-9dfa-093cf720e3e9" />
 
 <img width="700" height="436" alt="Screenshot 2025-09-30 231005" src="https://github.com/user-attachments/assets/a651c7cb-7ba0-4e4c-9c64-27d37c15c41d" />
 
+## Sensor Update 
+
 <img width="700" height="363" alt="Screenshot 2025-09-30 231207" src="https://github.com/user-attachments/assets/7107f262-27b3-47da-a63d-7628f3458ee1" />
+
+## Emergency Test
 
 <img width="1824" height="150" alt="Screenshot 2025-09-30 232143" src="https://github.com/user-attachments/assets/e1ae235a-4422-4ccc-b4ac-7f7226887e97" />
 
+## Toggle Emergency Mode
 
 <img width="700" height="250" alt="Screenshot 2025-09-30 232157" src="https://github.com/user-attachments/assets/4a0ac79e-0d87-4333-bf4b-cf3c5977b58c" />
 
-<img width="700" height="242" alt="Screenshot 2025-09-30 231126" src="https://github.com/user-attachments/assets/7288a83a-48b4-432c-b658-82be651a6c11" />
-
-
-
+## Exit 
 
 <img width="661" height="595" alt="Screenshot 2025-10-01 081319" src="https://github.com/user-attachments/assets/7b7d1f1b-f039-417c-b8b1-0b7c470e9bcd" />
+
 
 
 
