@@ -1,11 +1,8 @@
 package com.smartoffice.facility.commands;
-
 import com.smartoffice.facility.core.User;
 import com.smartoffice.facility.interfaces.IAuthenticationService;
 import com.smartoffice.facility.interfaces.ICommand;
 import com.smartoffice.facility.services.OfficeFacility; 
-
-
 public abstract class AuthenticatedCommand implements ICommand {
 
     
