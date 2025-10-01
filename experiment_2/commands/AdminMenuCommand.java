@@ -1,12 +1,9 @@
 package com.smartoffice.facility.commands;
-
 import com.smartoffice.facility.core.Room;
 import com.smartoffice.facility.core.User;
 import com.smartoffice.facility.interfaces.IAuthenticationService;
 import com.smartoffice.facility.services.OfficeFacility;
-
 import java.util.Scanner;
-
 public class AdminMenuCommand extends AuthenticatedCommand {
     private final Scanner scanner;
 
