@@ -1,3 +1,24 @@
+# Compiled files, Logs, and Crash reports (From both local and remote)
+*.class
+*.log
+hs_err_pid*
+replay_pid*
+
+# Package Files (From remote)
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# BlueJ and J2ME (From remote)
+*.ctxt
+.mtj.tmp/
+
+# === IDE Specific Files ===
+
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
