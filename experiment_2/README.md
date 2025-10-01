@@ -1,5 +1,30 @@
 # FEATURES USED
 
+# 1. Admin function
+
+* Configure Rooms
+* Add Rooms
+* List Rooms
+* Set Room MaxCapacity
+* Cancel Booking
+* View Statistics
+* Sensor Mock
+* Emergency Test(Sensor)
+* Toggle Emergency Mode
+
+# 2.Manager functions
+
+* Manager ID Verification
+* View and Maintain Statistics Data
+
+# 3. User functions
+
+* Registration
+* Book Room
+* View Available Rooms
+* Cancel Booking
+* Add Occupants
+  
 ## Smart Office Facility Menu
 
 <img width="700" height="300" alt="Screenshot 2025-09-30 225603" src="https://github.com/user-attachments/assets/e4ea7b22-f0f6-4741-9e51-e45d6766c341" />
@@ -111,6 +136,7 @@
 # HIGH LEVEL SYSTEM DESIGN
 
 <img width="661" height="595" alt="Screenshot 2025-10-01 081319" src="https://github.com/user-attachments/assets/7b7d1f1b-f039-417c-b8b1-0b7c470e9bcd" />
+
 
 
 
