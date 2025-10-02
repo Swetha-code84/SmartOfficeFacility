@@ -86,7 +86,7 @@
 
 ## Booking Release Warning
 
-<img width="700" height="550" alt="Screenshot 2025-10-02 120732" src="https://github.com/user-attachments/assets/fac7aeb3-93f3-44d4-a086-46931236b588" />
+<img width="700" height="600" alt="Screenshot 2025-10-02 121214" src="https://github.com/user-attachments/assets/c85a4b21-cc50-4be4-bce2-c0e5db027d72" />
 
 ## Mention Capacity & Time Slot
 
@@ -136,6 +136,7 @@
 # HIGH LEVEL SYSTEM DESIGN
 
 <img width="661" height="595" alt="Screenshot 2025-10-01 081319" src="https://github.com/user-attachments/assets/7b7d1f1b-f039-417c-b8b1-0b7c470e9bcd" />
+
 
 
 
