@@ -56,11 +56,11 @@ public class OfficeFacility {
 
     public synchronized boolean initialConfigure(int numberOfRooms) {
         if (isConfigured) {
-            System.out.println(" Office facility is already configured. Cannot reconfigure.");
+            System.out.println(" X Office facility is already configured. Cannot reconfigure.");
             return false;
         }
         if (numberOfRooms <= 0) {
-            System.out.println(" Invalid number of rooms. Must be greater than 0.");
+            System.out.println("X Invalid number of rooms. Must be greater than 0.");
             return false;
         }
 
@@ -77,7 +77,7 @@ public class OfficeFacility {
 
     public synchronized boolean addSingleRoom(int roomNumber) {
         if (rooms.containsKey(roomNumber)) {
-            System.out.println(" Room " + roomNumber + " already exists.");
+            System.out.println("X Room " + roomNumber + " already exists.");
             return false;
         }
         Room room = roomFactory.createRoom(roomNumber);
@@ -96,7 +96,7 @@ public class OfficeFacility {
         Room room = rooms.get(roomNumber);
 
         if (room == null) {
-            System.out.println(" Room " + roomNumber + " does not exist.");
+            System.out.println(" X Room " + roomNumber + " does not exist.");
             return false;
         }
         room.addBooking(newBooking);
@@ -118,27 +118,27 @@ public class OfficeFacility {
             if (room.removeBooking(bookingToCancel.get())) {
                 AppConstants.LOGGER.info("Booking cancelled manually for Room " + roomNumber + " at " + startTime + ".");
                 updateRoomOccupancy(roomNumber, room.getOccupancyCount());
-                return " Booking for Room " + roomNumber + " at " + startTime.toLocalTime() + " successfully cancelled.";
+                return " ✅ Booking for Room " + roomNumber + " at " + startTime.toLocalTime() + " successfully cancelled.";
             }
         }
 
         if (room.getBookings().isEmpty()) {
-            return " Cancellation Denied: Room " + roomNumber + " has no scheduled bookings.";
+            return "X Cancellation Denied: Room " + roomNumber + " has no scheduled bookings.";
         }
 
-        return " Cancellation Denied: A booking for Room " + roomNumber + " at " + startTime.toLocalTime() + " was not found for your user. Access denied.";
+        return " X Cancellation Denied: A booking for Room " + roomNumber + " at " + startTime.toLocalTime() + " was not found for your user. Access denied.";
     }
 
     public synchronized boolean requestExtension(int roomNumber, Booking bookingToExtend, int additionalMinutes) {
         Room room = rooms.get(roomNumber);
 
         if (room == null) {
-            System.out.println(" Extension failed: Room " + roomNumber + " not found.");
+            System.out.println(" X Extension failed: Room " + roomNumber + " not found.");
             return false;
         }
 
         if (!room.checkExtension(bookingToExtend, additionalMinutes)) {
-            System.out.println(" Extension failed: New duration conflicts with an existing reservation.");
+            System.out.println(" X Extension failed: New duration conflicts with an existing reservation.");
             return false;
         }
 
